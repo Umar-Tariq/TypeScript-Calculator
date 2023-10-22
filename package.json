@@ -1,15 +1,15 @@
 {
-  "name": "umarcalculator",
-  "version": "1.0.0",
+  "name": "umartariqcalculator",
+  "version": "1.0.1",
   "description": "Simple CLI calculator built with TypeScript in Node.js",
   "type": "module",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Umar-Tariq/Calculator-Typescript"
+    "url": "https://github.com/Umar-Tariq/TypeScript-Calculator"
   },
   "bin": {
-    "umarcalculator": "./index.js"
+    "umartariqscalculator": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
