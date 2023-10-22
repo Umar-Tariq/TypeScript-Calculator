@@ -1,0 +1,27 @@
+{
+  "name": "umar-calculator",
+  "version": "1.0.0",
+  "description": "Simple CLI calculator built with TypeScript in Node.js",
+  "type": "module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Umar-Tariq/Calculator-Typescript"
+  },
+  "bin": {
+    "umar-calculator": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.6",
+    "@types/node": "^20.8.7"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.11"
+  }
+}
