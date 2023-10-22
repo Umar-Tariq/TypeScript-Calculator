@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/Umar-Tariq/TypeScript-Calculator.git"
   },
-  "bin": "./index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
