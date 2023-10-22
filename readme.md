@@ -10,9 +10,6 @@ A simple CLI calculator built with TypeScript in Node.js.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [API](#api)
-- [License](#license)
-- [Contributing](#contributing)
 - [Issues](#issues)
 - [Author](#author)
 
