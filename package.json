@@ -3,14 +3,12 @@
   "version": "1.0.5",
   "description": "Simple CLI calculator built with TypeScript in Node.js",
   "type": "module",
-  "main": "./index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Umar-Tariq/TypeScript-Calculator.git"
   },
-  "bin": {
-    "umartariqscalculator": "./index.js"
-  },
+  "bin": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
