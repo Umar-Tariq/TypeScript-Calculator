@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 let output = 0;
@@ -32,7 +33,14 @@ function animateMessage() {
     const animationSpeed = 100;
     const message = "Welcome to My Calculator";
     let index = 0;
-    const chalkColors = [chalk.blue, chalk.green, chalk.yellow, chalk.magenta, chalk.cyan, chalk.red];
+    const chalkColors = [
+        chalk.blue,
+        chalk.green,
+        chalk.yellow,
+        chalk.magenta,
+        chalk.cyan,
+        chalk.red,
+    ];
     function displayCharacter() {
         process.stdout.write(chalkColors[index % chalkColors.length](message[index]));
         index++;
@@ -40,6 +48,7 @@ function animateMessage() {
             setTimeout(displayCharacter, animationSpeed);
         }
         else {
+            console.log();
             Calculator();
         }
     }
@@ -84,23 +93,23 @@ function again(val) {
         }
         else {
             console.log(`
-             _______________________________
-            |  ___________________________  |
-            | | ANSWER                    | |
-                                 ${output}  
-            | |___________________________| |
-            |  _____ _____ _____   _____    |
-            | |  7  |  8  |  9  | |  +  |   |
-            | |_____|_____|_____| |_____|   |
-            | |  4  |  5  |  6  | |  -  |   |
-            | |_____|_____|_____| |_____|   |
-            | |  1  |  2  |  3  | |  *  |   |
-              |_____|_____|_____| |_____|    
-            | |  .  |  0  |  =  | |  /  |   |
-            | |_____|_____|_____| |_____|   |
-            |_______________________________|
+             _____________________________
+            |  _________________________  |
+            | | ANSWER                  | |
+                            ${output}  
+            | |_________________________| |
+            |  _____ _____ _____   _____  |
+            | |  7  |  8  |  9  | |  +  | |
+            | |_____|_____|_____| |_____| |
+            | |  4  |  5  |  6  | |  -  | |
+            | |_____|_____|_____| |_____| |
+            | |  1  |  2  |  3  | |  *  | |
+              |_____|_____|_____| |_____|  
+            | |  .  |  0  |  =  | |  /  | |
+            | |_____|_____|_____| |_____| |
+            |_____________________________|
             `);
-            console.log("Thank you for using our calculator");
+            console.log(chalk.bgGray("Thank you for using our calculator"));
         }
     });
 }
@@ -110,7 +119,7 @@ function Calculator() {
         {
             type: "number",
             name: "number1",
-            message: chalk.bgCyan("\nEnter first number: "),
+            message: chalk.bgCyan("Enter first number: "),
         },
         {
             type: "list",

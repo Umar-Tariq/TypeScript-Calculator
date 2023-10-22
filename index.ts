@@ -112,7 +112,7 @@ function again(val: number) {
             |_____________________________|
             `);
 
-        console.log("Thank you for using our calculator");
+        console.log(chalk.bgGray("Thank you for using our calculator"));
       }
     });
 }
