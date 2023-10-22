@@ -6,7 +6,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Umar-Tariq/TypeScript-Calculator"
+    "url": "git+https://github.com/Umar-Tariq/TypeScript-Calculator.git"
   },
   "bin": {
     "umartariqscalculator": "./index.js"
