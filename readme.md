@@ -40,4 +40,4 @@ If you encounter any issues or have questions, please create a GitHub issue in t
 
 ## Author
 
-This module is maintained by ![Umar Tariq](https://github.com/Umar-Tariq).
+This module is maintained by ![](https://github.com/Umar-Tariq).
